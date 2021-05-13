@@ -1,0 +1,28 @@
+{
+  "name": "bezkoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watch --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Rushabh Rathod",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/automl": "^2.3.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "supertest": "^6.0.1"
+  }
+}
