@@ -1,0 +1,6 @@
+UNASSIGNED,gs://tomato_disease_uwin/train/bacterial_spot/
+UNASSIGNED,gs://tomato_disease_uwin/train/black_mold/
+UNASSIGNED,gs://tomato_disease_uwin/train/gray_spot/
+UNASSIGNED,gs://tomato_disease_uwin/train/health/
+UNASSIGNED,gs://tomato_disease_uwin/train/late_blight/
+UNASSIGNED,gs://tomato_disease_uwin/train/powdery_mildew/
