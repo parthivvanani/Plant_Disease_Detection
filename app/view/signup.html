@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body >
+    <header>
+        
+    
+        <nav class = "navbar navbar-default navbar-dark bg-dark">
+          <div class = "container">
+            <div class= "collapse navbar-collapse" id='navbar-collapse'>
+              <ul class= "nav navbar-nav">
+                <li class="navbar-brand"> <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="navbar-brand"> <a href="/types" class="nav-link">Disease</a>
+                </li>
+                <li class= "navbar-brand"> <a href="/upload" class="nav-link"> Upload Image</a>
+                </li>
+                <li class="navbar-brand"> <a href="/login" class="nav-link"> Login</a>
+                </li>
+                <li class="navbar-brand"> <a href="/register" class="nav-link">Register</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="jumbotron">
+        </div>
+    </header>
+
+
+    <div class="body1">
+        <div class="container1">
+            <form action="#" onsubmit="signup(); return false;">
+                <div class="text">
+                    Register
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-data">
+                        <label>Username</label>
+                        <input id="username" type="text" maxlength="12" minlength="5" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-data">
+                        <label>Email</label>
+                        <input id="email" type="email" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-data">
+                        <label>Password</label>
+                        <input id="password" type="password" maxLength = "20" minLength="6" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="form-row">
+                    <div class="input-data">
+                        <label>Role</label>
+                        <input id="name" type="text" required>
+                        <div class="underline"></div>
+                    </div>
+                </div> -->
+
+                <div class="form-row">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="submit" onclick="">
+                        <!-- <button  id="btn" onclick="dateSelected()">Submit</button> -->
+                    </div>
+                </div>                   
+                    
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    <p id="p"></p>
+</body>
+<script src="JS/jquery-3.4.1.min.js"></script>
+<script src="JS/toastr.js"></script>
+<script src="JS/script.js"></script>
+</html>

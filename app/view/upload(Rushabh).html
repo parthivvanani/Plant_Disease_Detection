@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+    <nav id = "top">
+        <p id="title">Crop Diseae Detection</p>
+    </nav>
+
+    <div class="body1">
+        <div class="container1">
+            <form action="api/upload" method="post" enctype="multipart/form-data" >
+                <div class="text">
+                    Upload
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-data">
+                        <label>Select an image</label>
+                        <input id="image" type="file" name="upload" accept="image/*" required>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="submit" onclick="">
+                        <!-- <button  id="btn" onclick="dateSelected()">Submit</button> -->
+                    </div>
+                </div>                   
+                    
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    <p id="p"></p>
+</body>
+<script src="JS/jquery-3.4.1.min.js"></script>
+<script src="JS/toastr.js"></script>
+<script src="JS/script.js"></script>
+<script>
+    // $(document).ready(function() {
+    //     var options = {
+    //         beforeSubmit: showRequest
+    //     }
+    // })
+
+    var uploadField = document.getElementById("image");
+    uploadField.onchange = function() {
+        toastr.options = {
+            "positionClass": "toast-bottom-full-width"
+        };
+        if(this.files[0].size > 307200) {
+            toastr.error("File too big");
+            this.value = "";
+        }
+    }
+</script>
+</html>
